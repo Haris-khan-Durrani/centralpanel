@@ -1,6 +1,6 @@
 # Checklist Application
 
-![Project]([https://example.com/path-to-your-logo.png](https://api.hariskhandurrani.com/2.jpg))
+![Project](https://api.hariskhandurrani.com/2.jpg)
 
 ## Overview
 
