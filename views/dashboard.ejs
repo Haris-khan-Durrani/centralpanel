@@ -1,0 +1,82 @@
+<%- include('partials/layout', 
+{ title: 'Dashboard', 
+body: `
+
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-4 mx-auto">
+    <div class="flex flex-col text-center w-full mb-2">
+
+          <video className="h-full w-full rounded-lg" loop autoPlay muted style="display:none">
+      <source src="https://storage.googleapis.com/msgsndr/CaUsaDHBNHw2z2ThM8DV/media/6661bc991848aec20d9d4087.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+      <h1 class="${headingcolor} sm:text-3xl text-2xl font-medium title-font text-gray-900 dark:text-white text-transform: capitalize">Welcome ${namo} to Checklist!</h1>    
+      <p class="dark:text-white">Hi there team here you can search any company from below filter remember these companies are coming from initial application form once you open the file from there you can submit any remark or you can go through with checklist form</p>
+      
+  <form class="w-full" method="get" id="myForm">
+  <div class="flex items-center border-b border-teal-500 py-2">
+    <input class="appearance-none dark:text-white bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" name="cname" type="text" placeholder="ABC Company" aria-label="Company Name">
+    
+    <select class="flex-shrink-0 border-transparent border-4 text-teal-500 hover:text-teal-800 text-sm py-1 px-2 rounded" name="ctas" id="ctas">
+      <option value="all">All</option>
+      <option value="open">Open</option>
+      <option value="won">Verified</option>
+      <option value="lost">Cancelled</option>
+      
+    </select>
+    
+    <button type="submit" class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded">
+      Search Any Company
+    </button>
+  </div>
+</form>
+
+      
+    </div>
+    
+    
+    
+    <div class="mb-2 w-full h-px max-w-6xl mx-auto p-2"
+        style="background-image: linear-gradient(90deg, rgba(149, 131, 198, 0) 1.46%, rgb(131 158 198 / 60%) 40.83%, rgba(149, 131, 198, 0.3) 65.57%, rgb(0 0 0 / 0%) 107.92%)">
+    </div>
+    
+    <div class="flex flex-wrap -m-4">
+   
+      ${contacts}
+ 
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="text-gray-600 body-font" style="display:none">
+  <div class="container px-5 py-1 mx-auto">
+
+    <div class="flex flex-wrap -m-4">
+    
+    ${addony}
+      
+    </div>
+  </div>
+</section>
+
+
+`
+
+
+}) %>
